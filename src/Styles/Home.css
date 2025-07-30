@@ -1,0 +1,388 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0faff;
+    color: #0f172a;
+    line-height: 1.6;
+}
+
+/* Home Container */
+.home-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    color: #0f172a;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.2);
+}
+
+/* Hero Text */
+.hero-text {
+    max-width: 700px;
+}
+
+/* Name */
+.name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* Role */
+.role {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* Summary */
+.summary {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+    opacity: 0.9;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+    padding: 12px 24px;
+    background-color: #0284c7;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #0ea5e9;
+}
+
+/* Profile Image */
+.hero-image img {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    object-position: center top;  /* Shift focus to top */
+    border-radius: 50%;
+    border: 6px solid #0284c7;
+    box-shadow: 0 12px 30px rgba(2, 132, 199, 0.2);
+    background: transparent;
+    display: block;
+    margin: 20px auto 0 auto;
+    transform: translateY(10px);
+}
+
+
+/* Section Cards */
+.introduction,
+.projects-preview,
+.skills-section,
+.aboutme,
+.soft-skills,
+.internship {
+    background: #e0f2fe;
+    color: #0f172a;
+    padding: 40px 25px;
+    margin: 40px 0;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(2, 132, 199, 0.15);
+    transition: 0.3s;
+}
+
+/* Section Headings */
+.introduction h3,
+.projects-preview h3,
+.skills-section h3,
+.aboutme h3,
+.internship h3 {
+    color: #0284c7;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Introduction List */
+.introduction ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.introduction li {
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 28px;
+}
+
+.introduction li::before {
+    content: '🌟';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 1.3rem;
+    color: #0284c7;
+}
+
+/* Projects Preview */
+.projects-preview {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.projects-preview.home-preview:hover {
+    transform: translateY(-8px);
+    background-color: #0284c7;
+    box-shadow: 0 12px 30px rgba(2, 132, 199, 0.3);
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.projects-preview ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.projects-preview li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.projects-preview li a {
+    color: #0f172a;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.projects-preview li a:hover {
+    color: #0284c7;
+    text-decoration: underline;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    justify-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.skills-grid li {
+    width: 180px;
+    aspect-ratio: 1 / 1;
+    background-color: #ffffff;
+    color: #0284c7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.05rem;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0 6px 18px rgba(2, 132, 199, 0.1);
+}
+
+.skills-grid li:hover {
+    background-color: #0284c7;
+    color: #ffffff;
+}
+
+.skills-grid li .skill-emoji {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    line-height: 1;
+    display: block;
+}
+
+/* Internship Section */
+.internship ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.internship li::before {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 1.3rem;
+    color: #0284c7;
+}
+
+.internship:hover {
+    transform: translateY(-8px);
+    background-color: #0284c7;
+    box-shadow: 0 12px 30px rgba(2, 132, 199, 0.3);
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* About Me Section */
+.aboutme {
+    margin-top: 3rem;
+}
+
+.aboutme ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    justify-items: center;
+    max-width: 900px;
+}
+
+.aboutme li {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    width: 180px;
+    box-shadow: 0 6px 18px rgba(2, 132, 199, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    color: #0284c7;
+}
+
+.aboutme li:hover {
+    transform: translateY(-8px);
+    background-color: #0284c7;
+    color: #ffffff;
+    box-shadow: 0 12px 30px rgba(2, 132, 199, 0.3);
+}
+
+.aboutme .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutme .skill-emoji {
+    font-size: 2.8rem;
+    margin-bottom: 0.6rem;
+    user-select: none;
+}
+
+.aboutme .skill-text {
+    font-size: 1.15rem;
+    font-weight: 600;
+    user-select: none;
+}
+
+/* Responsive Layout */
+@media (min-width: 769px) {
+    .hero {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hero-text {
+        flex: 1;
+    }
+
+    .hero-image {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: 40px 15px;
+    }
+
+    .hero {
+        padding: 40px 15px;
+        gap: 20px;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .role {
+        font-size: 1.3rem;
+    }
+
+    .summary {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .cta-buttons .btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+
+    .hero-image img {
+        width: 240px;
+        height: 240px;
+        margin-top: 0;
+    }
+
+    .introduction,
+    .projects-preview,
+    .skills-section,
+    .certifications,
+    .soft-skills,
+    .internship {
+        padding: 25px 15px;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 2.3rem;
+    }
+
+    .role {
+        font-size: 1.1rem;
+    }
+
+    .summary {
+        font-size: 0.95rem;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+}

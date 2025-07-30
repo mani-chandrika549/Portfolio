@@ -1,0 +1,51 @@
+/* Container for all skill cards */
+.skills-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  width: 100%;
+  margin: 0 auto 40px auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* Individual card styling */
+.skills-card {
+  background-color: #e0f2fe; /* light ocean blue background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #0f172a; /* dark navy text */
+  width: 260px;
+  height: 300px;
+}
+
+/* Heading inside each skill card */
+.skills-card h4 {
+  margin-bottom: 12px;
+  color: #0284c7; /* strong ocean blue */
+}
+
+/* List styling inside the card */
+.skills-card ul {
+  padding-left: 20px;
+}
+
+.skills-card li {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.skills-card:hover {
+  transform: translateY(-8px);
+  background-color: #0284c7; /* hover ocean blue */
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(2, 132, 199, 0.3);
+}
+
+.skills-card:hover h4 {
+  color: #ffffff;
+}

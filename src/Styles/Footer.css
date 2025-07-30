@@ -1,0 +1,104 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0faff;
+    color: #0f172a;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+.footer {
+    background: #dbeafe;
+    color: #0f172a;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(2, 132, 199, 0.15);
+}
+
+/* Footer Message */
+.footer-message {
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #64748b;
+}
+
+/* Footer Button */
+.footer .btn,
+.footer .contact-btn {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #0284c7;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer .btn:hover,
+.footer .contact-btn:hover {
+    background-color: #0ea5e9;
+    color: #ffffff;
+}
+
+/* Social Links Container */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+/* Each Social Link with icon and text */
+.social-links a.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0f172a;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
+
+.social-links a.social-link:hover {
+    color: #0284c7;
+}
+
+/* Social Icon Images */
+.social-links a.social-link img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.social-links a.social-link:hover img {
+    transform: scale(1.2);
+}
+
+/* Footer Copyright */
+.footer-copy {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: #64748b;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .social-links {
+        gap: 15px;
+    }
+
+    .social-links a.social-link {
+        font-size: 0.9rem;
+        gap: 6px;
+    }
+}

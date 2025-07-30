@@ -1,0 +1,58 @@
+/* About Cards Grid */
+.about-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+/* About Card Styling - Ocean Blue Theme */
+.about-card {
+  background-color: #dbeafe;
+  border-radius: 12px;
+  padding: 2rem;
+  min-height: 260px;
+  color: #0f172a;
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Hover Styling */
+.about-card:hover {
+  background-color: #0284c7;
+  color: #ffffff;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(2, 132, 199, 0.3);
+}
+
+/* Emoji + Text Container */
+.about-card .skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Emoji */
+.about-card .skill-emoji {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+/* Title Text */
+.about-card .skill-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Text */
+.about-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.95;
+}

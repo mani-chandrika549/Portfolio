@@ -1,0 +1,124 @@
+.education-container {
+  padding: 40px 20px;
+}
+
+.roadmap-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #0284c7;
+}
+
+/* Timeline layout */
+.timeline {
+  position: relative;
+  margin: 40px auto;
+  max-width: 1000px;
+  padding-top: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: #0284c7;
+  z-index: 0;
+}
+
+/* Timeline item container */
+.timeline-item {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  width: 100%;
+  z-index: 1;
+}
+
+.timeline-item.left {
+  justify-content: flex-start;
+}
+
+.timeline-item.right {
+  justify-content: flex-end;
+}
+
+/* Dot */
+.timeline-dot {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background: #0284c7;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 6px rgba(2, 132, 199, 0.5);
+}
+
+/* Content box */
+.timeline-content {
+  position: relative;
+  background: #e0f2fe;
+  padding: 20px 25px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  color: #0f172a;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.timeline-item.left .timeline-content {
+  margin-right: auto;
+  margin-left: 0;
+  padding-right: 30px;
+}
+
+.timeline-item.right .timeline-content {
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 30px;
+}
+
+/* Hover effect */
+.timeline-content:hover {
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #0369a1;
+  box-shadow: 0 0 20px 4px rgba(3, 105, 161, 0.6);
+  transform: translateY(-4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    flex-direction: column !important;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+
+  .timeline-dot {
+    left: 20px;
+    transform: none;
+  }
+
+  .timeline-content {
+    margin: 0;
+    text-align: left;
+    max-width: 100%;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
